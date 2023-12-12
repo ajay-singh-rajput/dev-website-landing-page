@@ -1,0 +1,353 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-family: sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+nav{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vmax;
+    color: white;
+    background-color: black;
+    /* position: fixed; */
+    top: 0;
+}
+.navUl{
+    display: flex;
+    list-style: none;
+    gap: 2vmax;
+    font-size: 1.2vmax;
+}
+.logo{
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    font-family: 'Borel', cursive;
+    font-size: 2.5vmax;
+    line-height: 1.8vmax;
+    margin-top: 0.5vmax;
+}
+select{
+    background-color: black;
+    font-size: 1.2vmax;
+}
+.op1{
+    font-size: 0.4vmax;
+    color: grey;
+}
+
+.navMatchBtn{
+    border: 0.105vmax solid white;
+    padding: 1.1vmax 3vmax;
+    border-radius: 2vmax;
+    font-size: 1.3vmax;
+    font-weight: 500;
+}
+
+.page1{
+    width: 100%;
+    /* height: 100%; */
+    /* padding: 0 2vmax; */
+    position: relative;
+}
+.containerUp{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4vmax 4vmax 4vmax;
+}
+.containerUp > div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.heading{
+    font-size: 4.5vmax;
+    font-weight: 300;
+    line-height: 5vmax;
+}
+strong{
+    font-weight: 900;
+}
+.rP{
+    font-size: 1.2vmax;
+    line-height: 2.1vmax;
+    color: rgb(216, 216, 216);
+}
+
+.find{
+    width: fit-content;
+    font-size: 1.5vmax;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    padding: 1.5vmax 4vmax;
+    /* margin: auto; */
+    border-radius: 4vmax;
+}
+
+.containerDown{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: end;
+    /* background-color: red; */
+    padding-top: 1.5vmax;
+color: black;
+
+}
+.name{
+    color: black;
+    font-style: 1.2vmax;
+    margin: 0 0.3vmax;
+    font-weight: 700;
+}
+.type{
+    width: 100%;
+    color: transparent;
+    font-size: 1vmax;
+    margin-top: 0.5vmax;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    line-height: 1.7vmax;
+}
+.card{
+    position: relative;
+    padding-top: 4vmax;
+width: 25%;
+border-radius: 15vw 15vw 0 0 ;
+display: flex;
+flex-direction: column;
+/* gap: 2vmax; */
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+}
+.card1{
+    height: 100%;
+    background-color: #FFB9CE;
+}
+.card2{
+    height: 70%;
+    background-color: #CAD5D4;
+}
+.card3{
+    height: 95%;
+    background-color: #E4DCD3;
+}
+.card4{
+    height: 70%;
+    background-color: #FFCA31;
+}
+.photo1{
+    margin-top: 3.5vmax;
+    background: url(https://www.pngitem.com/pimgs/b/286-2868427_smiling-png.png);
+
+}
+.photo2{
+    margin-top: 3vmax;
+    background: url(https://www.pngkit.com/png/full/340-3400418_smiling-man-guy-smiling-png.png);
+
+}
+.photo3{
+    margin-top: 3vmax;
+    background: url(https://www.pngitem.com/pimgs/b/90-907434_angry-woman-png.png);
+
+}
+.photo4{
+    margin-top: 3vmax;
+    background: url(toppng.com-handsome-businessman-smile-businessman-smiling-449x662.png);
+
+}
+.photo{
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    /* margin-top: 2vmax; */
+    background-repeat: no-repeat;
+    filter: saturate(0);
+    mix-blend-mode: luminosity;
+    transition: all linear 0.5s;
+}
+.photo4{
+    mix-blend-mode: normal;
+}
+
+.card:hover .photo{
+    filter: saturate(1);
+    mix-blend-mode: normal;
+}
+
+.type::after{
+    width: 100%;
+    height: 100%;
+    content: "React Engineer";
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all ease 0.3s;
+}
+.type::before{
+    width: 100%;
+    height: 100%;
+    content: "Click To Know More";
+    color: black;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all ease 0.3s;
+}
+
+.typeb::after{
+    content: "Data Engineer";
+}
+.typec::after{
+    content: "Backend Devloper";
+}
+.typed::after{
+    content: "AI Specialist";
+}
+
+.card:hover .type::after{
+transform: translateY(-110%);
+color: red;
+}
+.card:hover .type::before{
+    /* top: 0; */
+    transform: translateY(-100%);
+    color: red;
+}
+
+
+
+
+
+.devDetailsDiv{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.459);
+    position: fixed;
+    bottom: 0%;
+    /* display: none; */
+    left: -100%;
+    transition: all ease 0.2s;
+
+}
+.devContainer{
+    width: 80%;
+    height: 90%;
+    background-color: #FFCA31;
+    padding: 2vmax 3vmax;
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+}
+
+.dp{
+    width: 8vmax;
+    height: 8vmax;
+    background: url(toppng.com-handsome-businessman-smile-businessman-smiling-449x662.png);
+    background-size: cover;
+    background-position: top;
+    background-color: grey;
+    border: 0.12vmax solid black;
+    border-radius: 5vmax;
+
+}
+.devLeft{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vmax;
+}
+
+.devRight{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vmax;
+}
+
+.devDetailsDiv h1{
+    color: royalblue;
+}
+.devUl li, .devDetailsDiv p{
+    color: black;
+}
+.devDetailsDiv i{
+    color: royalblue;
+    font-size: 1.2vmax;
+}
+.devName{
+    font-style: 1.2vmax;
+    color: black;
+    font-weight: 500;
+}
+.devRole{
+    font-size: 0.7vmax;
+    background-color: darkred;
+}
+
+.devButton{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vmax;
+}
+.hire{
+    background-color: black;
+    color: white;
+    padding: 0.7vmax 1.9vmax;
+    box-shadow: 0.1vmax 0.1vmax 0.2vmax rgba(0, 0, 0, 0.662);
+    font-weight: 500;
+    font-size: 1vmax;
+    border-radius: 0.3vmax;
+}
+
+.cv{
+    background-color: white;
+    color: black;
+    padding: 0.7vmax 2vmax;
+    font-weight: 500;
+    font-size: 1vmax;
+    border-radius: 0.3vmax;
+}
+.close{
+    font-size: 5vmax;
+    font-weight: 900;
+    color: black;
+    background-color: white;
+    position: absolute;
+    top: 7%;
+    right: 12%;
+    cursor: pointer;
+    padding: 0.3vmax;
+    border-radius: 1vmax;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
